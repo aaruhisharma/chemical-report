@@ -26,19 +26,31 @@
         <tr>
            <th><i class="fa fa-check"></i></th>
            <th></th>
-            <th>Chemical name</th>
-            <th>Vendor</th>
-            <th>Density<br>(g/m³)</th>
-            <th>Viscosity<br>(m²/s)</th>
+            <th style="border-right: 2px solid rgb(179, 178, 178); height:100%;">Chemical name</th>
+            <th >Vendor</th>
+            <th>Density</th>
+            <th>Viscosity</th>
             <th>Packaging</th>
             <th>Pack<br> Size</th>
             <th>Unit</th>
             <th>Quantity</th>
           </tr>
-          <tr onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
-            <th><i class="fa fa-check" class="tickmark"></i></th>
-            <th>1</th>
-            <td style="border: none;">Ammonium Persufate</td>
+
+          <tr>
+            <th ></th>
+            <th></th>
+            <th style="border-right: 2px solid rgb(179, 178, 178); height:100%;"></th>
+            <th></th>
+            <th class="tableaheading">(g/m³)</th>
+            <th class="tableaheading">(m²/s)</th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr onclick="ChangeBackgroundColor(this)">
+            <td><i class="fa fa-check"></i></td>
+            <td>1</td>
+            <td style=" border-right: 2px solid rgb(179, 178, 178); height:100%;">Ammonium Persufate</td>
             <td>LG Chem</td>
             <td  class="dataBorder" contenteditable="true">3525.92</td>
             <td class="dataBorder" contenteditable="true">60.631</td>
@@ -48,10 +60,10 @@
             <td class="dataBorder" contenteditable="true">6495.18</td>
           </tr>
 
-          <tr onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
-            <th><i class="fa fa-check" class="tickmark"></i></th>
-            <th>2</th>
-            <td style="border: none;">Caustic Potash</td>
+          <tr onclick="ChangeBackgroundColor(this)">
+            <td><i class="fa fa-check"></i></td>
+            <td>2</td>
+            <td style="border-right: 2px solid rgb(179, 178, 178); height:100%;">Caustic Potash</td>
             <td>Formosa</td>
             <td class="dataBorder" contenteditable="true">3172.15</td>
             <td class="dataBorder" contenteditable="true">48.22</td>
@@ -61,10 +73,10 @@
             <td class="dataBorder" contenteditable="true">8751.90</td>
           </tr>
 
-          <tr  onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
-            <th><i class="fa fa-check" class="tickmark"></i></th>
-            <th>3</th>
-            <td style="border: none;">Dimethylaminopropylamino</td>
+          <tr  onclick="ChangeBackgroundColor(this)">
+            <td><i class="fa fa-check"></i></td>
+            <td>3</td>
+            <td style="border-right: 2px solid rgb(179, 178, 178); height:100%;">Dimethylaminopropylamino</td>
             <td>LG Chem</td>
             <td class="dataBorder" contenteditable="true">8435.37</td>
             <td  class="dataBorder" contenteditable="true">12.62</td>
@@ -74,10 +86,10 @@
             <td class="dataBorder" contenteditable="true">5964.61</td>
           </tr>
 
-          <tr  onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
-            <th><i class="fa fa-check" class="tickmark"></i></th>
-            <th>4</th>
-            <td style="border: none;">Mono Ammonium Phosphate</td>
+          <tr  onclick="ChangeBackgroundColor(this)">
+            <td><i class="fa fa-check"></i></td>
+            <td>4</td>
+            <td style="border-right: 2px solid rgb(179, 178, 178); height:100%;" >Mono Ammonium Phosphate</td>
             <td>Sinopec</td>
             <td class="dataBorder" contenteditable="true">1597.65</td>
             <td class="dataBorder" contenteditable="true">76.51</td>
@@ -87,10 +99,10 @@
             <td class="dataBorder" contenteditable="true">8183.73</td>
           </tr>
 
-          <tr  onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
-            <th><i class="fa fa-check" class="tickmark"></i></th>
-            <th>5</th>
-            <td style="border: none;">Ferric Nitrate</td>
+          <tr  onclick="ChangeBackgroundColor(this)">
+            <td><i class="fa fa-check"></i></td>
+            <td>5</td>
+            <td style="border-right: 2px solid rgb(179, 178, 178); height:100%;">Ferric Nitrate</td>
             <td>DowDupont</td>
             <td class="dataBorder" contenteditable="true">364.04</td>
             <td class="dataBorder" contenteditable="true">14.90</td>
@@ -100,10 +112,10 @@
             <td class="dataBorder" contenteditable="true">4154.33</td>
           </tr>
 
-          <tr  onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
-            <th><i class="fa fa-check" class="tickmark"></i></th>
-            <th>6</th>
-            <td style="border: none;">n-Pentane</td>
+          <tr  onclick="ChangeBackgroundColor(this)">
+            <td><i class="fa fa-check"></i></td>
+            <td>6</td>
+            <td style="border-right: 2px solid rgb(179, 178, 178); height:100%;">n-Pentane</td>
             <td>Sinopec</td>
             <td class="dataBorder" contenteditable="true">4535.26</td>
             <td class="dataBorder" contenteditable="true">66.76</td>
@@ -113,10 +125,10 @@
             <td class="dataBorder" contenteditable="true">6272.34</td>
           </tr>
 
-          <tr  onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
-            <th><i class="fa fa-check" class="tickmark"></i></th>
-            <th>7</th>
-            <td style="border: none;">Glycol Ether PM</td>
+          <tr  onclick="ChangeBackgroundColor(this)">
+            <td><i class="fa fa-check"></i></td>
+            <td>7</td>
+            <td style="border-right: 2px solid rgb(179, 178, 178); height:100%;">Glycol Ether PM</td>
             <td>LG Chem</td>
             <td class="dataBorder" contenteditable="true">6495.18</td>
             <td class="dataBorder" contenteditable="true">72.12</td>
@@ -127,5 +139,18 @@
           </tr>
      </table>
     </div>
+    <script type="text/javascript">
+    function ChangeBackgroundColor(row){
+      console.log(row);
+
+      const RowBackground = row.parentNode.querySelector('tr.selected'); 
+      RowBackground && RowBackground.querySelector('td:first-child').classList.remove("iconcolor")
+      RowBackground && RowBackground.classList.remove('selected'); 
+      row.classList.add('selected');
+      row.querySelector('td:first-child').classList.add("iconcolor")
+    }
+  </script>
+  
 </body>
+
 </html>
