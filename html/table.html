@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    <div class="tableBackground">
+     <div>
+        <p>Chemical  Supplies</p>
+     </div>
+     <div class="tableImage">
+        <img src="../images/firstAid.png">
+        <img src="../images/downArrow.png">
+        <img src="../images/upArrow.png">
+        <img src="../images/delete.png">
+        <img src="../images/left.jfif">
+        <img src="../images/pendrive.png">
+     </div>
+    </div>
+    <table>
+        <tr>
+           <th><i class="fa fa-check"></i></th>
+           <th></th>
+            <th>Chemical name</th>
+            <th>Vendor</th>
+            <th>Density<br>(g/m³)</th>
+            <th>Viscosity<br>(m²/s)</th>
+            <th>Packaging</th>
+            <th>Pack<br> Size</th>
+            <th>Unit</th>
+            <th>Quantity</th>
+          </tr>
+          <tr onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
+            <th><i class="fa fa-check" class="tickmark"></i></th>
+            <th>1</th>
+            <td style="border: none;">Ammonium Persufate</td>
+            <td>LG Chem</td>
+            <td  class="dataBorder" contenteditable="true">3525.92</td>
+            <td class="dataBorder" contenteditable="true">60.631</td>
+            <td>Bag</td>
+            <td>100.00</td>
+            <td>kg</td>
+            <td class="dataBorder" contenteditable="true">6495.18</td>
+          </tr>
+
+          <tr onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
+            <th><i class="fa fa-check" class="tickmark"></i></th>
+            <th>2</th>
+            <td style="border: none;">Caustic Potash</td>
+            <td>Formosa</td>
+            <td class="dataBorder" contenteditable="true">3172.15</td>
+            <td class="dataBorder" contenteditable="true">48.22</td>
+            <td>Bag</td>
+            <td>100.00 </td>
+            <td>kg</td>
+            <td class="dataBorder" contenteditable="true">8751.90</td>
+          </tr>
+
+          <tr  onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
+            <th><i class="fa fa-check" class="tickmark"></i></th>
+            <th>3</th>
+            <td style="border: none;">Dimethylaminopropylamino</td>
+            <td>LG Chem</td>
+            <td class="dataBorder" contenteditable="true">8435.37</td>
+            <td  class="dataBorder" contenteditable="true">12.62</td>
+            <td>Barrel</td>
+            <td>75.00 </td>
+            <td>L</td>
+            <td class="dataBorder" contenteditable="true">5964.61</td>
+          </tr>
+
+          <tr  onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
+            <th><i class="fa fa-check" class="tickmark"></i></th>
+            <th>4</th>
+            <td style="border: none;">Mono Ammonium Phosphate</td>
+            <td>Sinopec</td>
+            <td class="dataBorder" contenteditable="true">1597.65</td>
+            <td class="dataBorder" contenteditable="true">76.51</td>
+            <td>Bag</td>
+            <td>105.00</td>
+            <td>kg</td>
+            <td class="dataBorder" contenteditable="true">8183.73</td>
+          </tr>
+
+          <tr  onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
+            <th><i class="fa fa-check" class="tickmark"></i></th>
+            <th>5</th>
+            <td style="border: none;">Ferric Nitrate</td>
+            <td>DowDupont</td>
+            <td class="dataBorder" contenteditable="true">364.04</td>
+            <td class="dataBorder" contenteditable="true">14.90</td>
+            <td>Bag</td>
+            <td>105.00</td>
+            <td>kg</td>
+            <td class="dataBorder" contenteditable="true">4154.33</td>
+          </tr>
+
+          <tr  onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
+            <th><i class="fa fa-check" class="tickmark"></i></th>
+            <th>6</th>
+            <td style="border: none;">n-Pentane</td>
+            <td>Sinopec</td>
+            <td class="dataBorder" contenteditable="true">4535.26</td>
+            <td class="dataBorder" contenteditable="true">66.76</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>t</td>
+            <td class="dataBorder" contenteditable="true">6272.34</td>
+          </tr>
+
+          <tr  onclick="var s = this.parentNode.querySelector('tr.selected'); s && s.classList.remove('selected'); this.classList.add('selected');">
+            <th><i class="fa fa-check" class="tickmark"></i></th>
+            <th>7</th>
+            <td style="border: none;">Glycol Ether PM</td>
+            <td>LG Chem</td>
+            <td class="dataBorder" contenteditable="true">6495.18</td>
+            <td class="dataBorder" contenteditable="true">72.12</td>
+            <td>Bag</td>
+            <td>250.00</td>
+            <td>kg</td>
+            <td class="dataBorder" contenteditable="true">8749.54</td>
+          </tr>
+     </table>
+    </div>
+</body>
+</html>
